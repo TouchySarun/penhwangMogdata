@@ -30,86 +30,28 @@ employees:{
     somtiew:{id:"somtiew", name:"สมทิว ปิ๊วปิ๊ว", role: "พนักงานขาย", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},  
 },
 slots: {
-  morning:{id:"morning", name: "กะเช้า", employee: [
-    {id:"somporn", name:"สมพร ป้อนเข้าปาก", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somchai", name:"สมชาย ใจดี", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somying", name:"สมหญิง จริงใจ", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-  ]},
-  late:{id:"late", name: "กะบ่าย", employee: [
-    {id:"sommai", name:"สมหมาย ใจดี", role: "พนักงานบัญชี", position: "หัวหน้าพนักงาน", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somkong", name:"สมคง ปงใจ", role: "พนักงานบัญชี", position: "เลขา", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-  ]}
+  morning:{id:"morning", name: "กะเช้า", employee: ["somporn","somchai","somying",]},
+  late:{id:"late", name: "กะบ่าย", employee: ["sommai", "somkong"]}
 },
 roles: {
   account:{id:"account", name:"พนักงานบัญชี", description:"ดูแลบัญชีของบริษัท",
-    manager: [
-      {id:"sommai", name:"สมหมาย ใจดี", role: "พนักงานบัญชี", position: "หัวหน้าพนักงาน", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-      {id:"somkong", name:"สมคง ปงใจ", role: "พนักงานบัญชี", position: "เลขา", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    ],
-    employee: [
-      {id:"somporn", name:"สมพร ป้อนเข้าปาก", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-      {id:"somchai", name:"สมชาย ใจดี", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-      {id:"somying", name:"สมหญิง จริงใจ", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    ], 
-    slot:  [
-      {id:"morning", name: "กะเช้า", employee: [
-        {id:"somporn", name:"สมพร ป้อนเข้าปาก", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-        {id:"somchai", name:"สมชาย ใจดี", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-        {id:"somying", name:"สมหญิง จริงใจ", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-      ]},
-      {id:"late", name: "กะบ่าย", employee: [
-        {id:"sommai", name:"สมหมาย ใจดี", role: "พนักงานบัญชี", position: "หัวหน้าพนักงาน", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-        {id:"somkong", name:"สมคง ปงใจ", role: "พนักงานบัญชี", position: "เลขา", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-      ]}
-    ]
+    manager: ["sommai","somkong"],
+    employee: ["somporn","somchai","somying"], 
+    slot:  ["morning","late"]
   },
   seller:{id:"seller", name:"พนักงานขาย", description:"ขายของและดูแลหน้าร้าน", 
-    manager: [
-      {id:"somsee", name:"สมศรี ปรีดี", role: "พนักงานขาย", position: "หัวหน้าพนักงาน", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    ], 
-    employee: [
-      {id:"sompop", name:"สมพบ ประสบเหตุ", role: "พนักงานขาย", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-      {id:"somrak", name:"สมรัก คึกคักจัง", role: "พนักงานขาย", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-      {id:"somtiew", name:"สมทิว ปิ๊วปิ๊ว", role: "พนักงานขาย", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",}, 
-    ],
-    slot:  [
-      {id:"morning", name: "กะเช้า", employee: [
-        {id:"sompop", name:"สมพบ ประสบเหตุ", role: "พนักงานขาย", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-        {id:"somrak", name:"สมรัก คึกคักจัง", role: "พนักงานขาย", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-        {id:"somtiew", name:"สมทิว ปิ๊วปิ๊ว", role: "พนักงานขาย", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",}, 
-        {id:"somsee", name:"สมศรี ปรีดี", role: "พนักงานขาย", position: "หัวหน้าพนักงาน", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-      ]},
-    ]
+    manager: ["somsee"], 
+    employee: ["sompop","somrak","somtiew"],
+    slot:  ["morning"]
   },
 },
 leaves: {
-  bus:{id:"bus", name: "ลากิจ", amount: 10, cycle: 'เดือน', employee: [
-    {id:"somporn", name:"สมพร ป้อนเข้าปาก", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somchai", name:"สมชาย ใจดี", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somying", name:"สมหญิง จริงใจ", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-  ]},
-  sick:{id:"sick", name: "ลาป่วย", amount: 20, cycle:"ปี", employee: [
-    {id:"sommai", name:"สมหมาย ใจดี", role: "พนักงานบัญชี", position: "หัวหน้าพนักงาน", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somkong", name:"สมคง ปงใจ", role: "พนักงานบัญชี", position: "เลขา", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somporn", name:"สมพร ป้อนเข้าปาก", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somchai", name:"สมชาย ใจดี", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somying", name:"สมหญิง จริงใจ", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-  ]}
+  bus:{id:"bus", name: "ลากิจ", amount: 10, cycle: 'เดือน', employee: ["somporn","somchai", "somying"]},
+  sick:{id:"sick", name: "ลาป่วย", amount: 20, cycle:"ปี", employee: ["sommai","somkong","somporn","somchai","somying"]}
 },
 locations: {
-  location1:{id: 'location1', name:"home", lat: 13.746774, lng: 100.5348332, error: 10.0, employee:[
-    {id:"sommai", name:"สมหมาย ใจดี", role: "พนักงานบัญชี", position: "หัวหน้าพนักงาน", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somkong", name:"สมคง ปงใจ", role: "พนักงานบัญชี", position: "เลขา", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somporn", name:"สมพร ป้อนเข้าปาก", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somchai", name:"สมชาย ใจดี", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somying", name:"สมหญิง จริงใจ", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-  ]},
-  location2:{id: 'location2', name:"home2", lat: 0.0, lng: 0.0, error: 10.0, employee:[
-    {id:"sompop", name:"สมพบ ประสบเหตุ", role: "พนักงานขาย", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somrak", name:"สมรัก คึกคักจัง", role: "พนักงานขาย", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-    {id:"somtiew", name:"สมทิว ปิ๊วปิ๊ว", role: "พนักงานขาย", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",}, 
-    {id:"somsee", name:"สมศรี ปรีดี", role: "พนักงานขาย", position: "หัวหน้าพนักงาน", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
-  ]},
+  location1:{id: 'location1', name:"home", lat: 13.746774, lng: 100.5348332, error: 10.0, employee:["sommai","somkong","somporn", "somchai", "somying"]},
+  location2:{id: 'location2', name:"home2", lat: 0.0, lng: 0.0, error: 10.0, employee:["sompop", "somrak","somtiew","somsee"]},
 },
 requests:[
   {type: "ขอลากิจ", name: "สมใจ นะจ๊ะ", time: "วันพุธ 28 ตุลาคม 2563, 09:30", start:"", end:""},
