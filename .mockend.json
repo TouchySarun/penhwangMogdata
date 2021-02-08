@@ -1,0 +1,26 @@
+data:{
+employees:{
+  allEmployees:[
+    {id:"sommai", name:"สมหมาย ใจดี", role: "พนักงานบัญชี", position: "หัวหน้าพนักงาน", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
+    {id:"somkong", name:"สมคง ปงใจ", role: "พนักงานบัญชี", position: "เลขา", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
+    {id:"somporn", name:"สมพร ป้อนเข้าปาก", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
+    {id:"somchai", name:"สมชาย ใจดี", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
+    {id:"somying", name:"สมหญิง จริงใจ", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
+    {id:"somsee", name:"สมศรี ปรีดี", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
+    {id:"sompop", name:"สมพบ ประสบเหตุ", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
+  ]
+},
+slots: [
+  {id:"0001", name: "กะเช้า", employee: [
+    {id:"somporn", name:"สมพร ป้อนเข้าปาก", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายเดือน", amount: 20000,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
+    {id:"somchai", name:"สมชาย ใจดี", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
+    {id:"somying", name:"สมหญิง จริงใจ", role: "พนักงานบัญชี", position: "ทั่วไป", tel: "0800000000", salary: { type: "รายวัน", amount: 320,}, img:"https://cdn.vuetifyjs.com/images/john.jpg",},
+  ]},
+  {id:"0002", name: "กะบ่าย", employee: [{id:"somwang", img:"https://cdn.vuetifyjs.com/images/john.jpg", name: "สมหวัง กำลังไป"}, {id:"somkong", img:"https://cdn.vuetifyjs.com/images/john.jpg", name: "สมคง ปรงใจ"},]}
+],
+roles: [
+  {id:"001", name:"พนักงานบัญชี", description:"ดูแลบัญชีของบริษัท", manager: 2, employee: 3, slot: 2},
+  {id:"002", name:"พนักงานขาย", description:"ขายของและดูแลหน้าร้าน", manager: 5, employee: 20, slot: 3},
+],
+
+}
