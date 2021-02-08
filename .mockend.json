@@ -50,17 +50,17 @@ leaves: {
   sick:{id:"sick", name: "ลาป่วย", amount: 20, cycle:"ปี", employee: ["sommai","somkong","somporn","somchai","somying"]}
 },
 locations: {
-  location1:{id: 'location1', name:"home", lat: 13.746774, lng: 100.5348332, error: 10.0, employee:["sommai","somkong","somporn", "somchai", "somying"]},
-  location2:{id: 'location2', name:"home2", lat: 0.0, lng: 0.0, error: 10.0, employee:["sompop", "somrak","somtiew","somsee"]},
+  location1:{id: "location1", name:"home", lat: 13.746774, lng: 100.5348332, error: 10.0, employee:["sommai","somkong","somporn", "somchai", "somying"]},
+  location2:{id: "location2", name:"home2", lat: 0.0, lng: 0.0, error: 10.0, employee:["sompop", "somrak","somtiew","somsee"]},
 },
 requests:[
   {type: "ขอลากิจ", name: "สมใจ นะจ๊ะ", time: "วันพุธ 28 ตุลาคม 2563, 09:30", start:"", end:""},
-  {type: 'ขอลาป่วย', name: 'สมใจ นะจ๊ะ', time: 'วันพุธ 28 ตุลาคม 2563, 09:30', start:'', end:''},
-  {type: 'ขอเปลี่ยนกะ', name: 'สมใจ นะจ๊ะ', time: 'วันพุธ 28 ตุลาคม 2563, 09:30', old:'กะเช้า', new:'กะบ่าย'},
+  {type: "ขอลาป่วย", name: "สมใจ นะจ๊ะ", time: "วันพุธ 28 ตุลาคม 2563, 09:30", start:"", end:""},
+  {type: "ขอเปลี่ยนกะ", name: "สมใจ นะจ๊ะ", time: "วันพุธ 28 ตุลาคม 2563, 09:30", old:"กะเช้า", new:"กะบ่าย"},
 ],
 confirmedReq: [
-  {type: 'ขอลากิจ', name: 'สมใจ นะจ๊ะ', manager: 'สมหมาย ใจใจ', time: 'วันพุธ 28 ตุลาคม 2563, 09:30', confirmedTime: 'วันพุธ 28 ตุลาคม 2563, 09:30'},
-  {type: 'ขอลาป่วย', name: 'สมใจ นะจ๊ะ', manager: 'สมหมาย ใจใจ', time: 'วันพุธ 28 ตุลาคม 2563, 09:30', confirmedTime: 'วันพุธ 28 ตุลาคม 2563, 09:30'},
-  {type: 'ขอเปลี่ยนกะ', name: 'สมใจ นะจ๊ะ', manager: 'สมหมาย ใจใจ', time: 'วันพุธ 28 ตุลาคม 2563, 09:30', confirmedTime: 'วันพุธ 28 ตุลาคม 2563',},
+  {type: "ขอลากิจ", name: "สมใจ นะจ๊ะ", manager: "สมหมาย ใจใจ", time: "วันพุธ 28 ตุลาคม 2563, 09:30", confirmedTime: "วันพุธ 28 ตุลาคม 2563, 09:30"},
+  {type: "ขอลาป่วย", name: "สมใจ นะจ๊ะ", manager: "สมหมาย ใจใจ", time: "วันพุธ 28 ตุลาคม 2563, 09:30", confirmedTime: "วันพุธ 28 ตุลาคม 2563, 09:30"},
+  {type: "ขอเปลี่ยนกะ", name: "สมใจ นะจ๊ะ", manager: "สมหมาย ใจใจ", time: "วันพุธ 28 ตุลาคม 2563, 09:30", confirmedTime: "วันพุธ 28 ตุลาคม 2563",},
 ],
 }
